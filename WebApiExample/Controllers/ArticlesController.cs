@@ -1,5 +1,5 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using WebApiExample.Model;
 using WebApiExample.Services;
 
 namespace WebApiExample.Controllers;
@@ -29,6 +29,7 @@ public class ArticlesController : ControllerBase
         }
     }
 
+    [Authorize]
     [HttpGet("shop/{id}")]
     public IActionResult ByShop(int id)
     {

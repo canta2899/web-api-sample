@@ -1,6 +1,3 @@
-using System.Globalization;
-using System.Linq.Expressions;
-using Microsoft.AspNetCore.Mvc.Diagnostics;
 using Microsoft.EntityFrameworkCore;
 using WebApiExample.Model;
 
