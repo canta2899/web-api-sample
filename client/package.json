@@ -1,0 +1,20 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "A sample typescript client",
+  "main": "index.js",
+  "scripts": {
+    "gen": "swagger-typescript-api -p http://localhost:5259/swagger/v1/swagger.json -o ./generated -n --modular",
+    "start": "ts-node index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "swagger-typescript-api": "^13.0.0",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "typescript": "^5.1.6"
+  }
+}

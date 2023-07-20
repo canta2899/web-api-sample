@@ -29,7 +29,7 @@ public class ArticlesController : ControllerBase
         }
     }
 
-    [HttpGet("/shop/{id}")]
+    [HttpGet("shop/{id}")]
     public IActionResult ByShop(int id)
     {
         try
